@@ -24,6 +24,7 @@
 
 # About
 nshrt - site for making url else longer, instead shortest xD
+(nshrt - not short)
 
 # What for?
 for joke lol
