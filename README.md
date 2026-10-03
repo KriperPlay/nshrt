@@ -36,4 +36,4 @@ i guess GUI is user-friendly..
 url decode to base64 and when u paste long link to browser - site encode base64 url back to normal url and open her
 
 # End
-u can self host nshrt or use my [LINK]()
+u can self host nshrt or use my [LINK](https://kriperplay.github.io/nshrt/)
