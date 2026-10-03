@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>nshrt</title>
+<style>
+  :root { box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); --fg: #f5f0f0; --dim: #c7c3c3; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  html, body { margin: 0; background: #000; color: var(--fg); }
+  body { min-height: 100vh; font-family: "Courier New", Courier, ui-monospace, monospace; font-size: clamp(11px, 3.3vw, 16px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2em; padding: 2em 0; position: relative; overflow-x: hidden; }
+  .star { position: fixed; color: #fff; pointer-events: none; z-index: 0; animation: blink 2s infinite ease-in-out; opacity: 0; }
+  @keyframes blink { 0%,100% { opacity: 0; } 50% { opacity: 1; } }
+  .frame { position: relative; z-index: 1; white-space: pre; line-height: 1.25; background: #000; }
+  .row { display: flex; align-items: center; }
+  .row > .side { color: var(--fg); }
+  .row > .in { flex: 1; display: flex; justify-content: center; min-width: 0; }
+  input { width: 100%; background: #000; color: var(--fg); border: 0; border-bottom: 1px dashed var(--dim); font: inherit; outline: none; padding: 0; caret-color: var(--fg); }
+  input::placeholder { color: var(--dim); }
+  button { background: #000; color: var(--fg); border: 0; font: inherit; cursor: pointer; padding: 0; }
+  button:hover, button:focus-visible { background: var(--fg); color: #000; outline: none; }
+  #out-wrap { display: none; }
+  #out-wrap.show { display: block; }
+  #out { white-space: pre-wrap; word-break: break-all; width: 100%; }
+</style>
+</head>
+<body>
+
+<div class="frame" id="main"></div>
+<div class="frame" id="out-wrap"></div>
+
+<script src="script.js" defer></script>
+<script src="../script.js" defer></script>
+</body>
+</html>
